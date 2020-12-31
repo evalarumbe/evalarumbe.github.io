@@ -7,15 +7,16 @@ header {
 #quote blockquote {
   font-size: 2rem;
   position: relative;
+  line-height: 1.5;
+  letter-spacing: 0.05ch;
 
-  .hanging-quote {
+  .decorative-quote {
     position: absolute;
-    left: -0.7ch;
-  }
-
-  .kerned-quote {
-    position: relative;
-    left: 0.3ch;
+    top: -14rem;
+    left: -5rem;
+    opacity: 0.1;
+    font-family: "Times New Roman", serif;
+    font-size: 30rem;
   }
 }
 
