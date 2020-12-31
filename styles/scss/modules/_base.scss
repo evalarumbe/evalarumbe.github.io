@@ -1,4 +1,5 @@
 @use '../variables/color' as *;
+@use '../variables/size' as *;
 
 /* Raleway font */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
@@ -17,7 +18,7 @@ html {
   // Read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
   font-size: 80%;
   
-  @media (min-width: 480px) {
+  @media (min-width: $tablet-lower + px) {
     font-size: 100%;
   }
 }
@@ -27,5 +28,22 @@ body {
   overflow-x: hidden;
   background: $watermelon no-repeat fixed;
   background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
+  font-size: 1.5rem;
+  line-height: 1.4;
   letter-spacing: 0.02ch;
+}
+
+section, header, footer {
+  
+  display: flex;
+  justify-content: center;
+
+  &.alternate-bg {
+    background-color: $body-text-bg;
+  }
+
+  .container {
+    flex: 0 1 $content-col + rem;
+    padding: 4rem 4rem 6rem;
+  }
 }

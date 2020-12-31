@@ -22,7 +22,21 @@ body {
   overflow-x: hidden;
   background: #f45 no-repeat fixed;
   background: linear-gradient(to bottom right, #f45, #fd2) no-repeat fixed;
+  font-size: 1.5rem;
+  line-height: 1.4;
   letter-spacing: 0.02ch;
+}
+
+section, header, footer {
+  display: flex;
+  justify-content: center;
+}
+section.alternate-bg, header.alternate-bg, footer.alternate-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+section .container, header .container, footer .container {
+  flex: 0 1 40rem;
+  padding: 4rem 4rem 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

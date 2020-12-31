@@ -1,0 +1,11 @@
+// layout elements
+
+// usage:
+// width: $content-col + rem
+$content-col: 40; // rem
+
+// breakpoints
+
+// usage:
+// @media (min-width: $tablet-lower + px)
+$tablet-lower: 480; // px
