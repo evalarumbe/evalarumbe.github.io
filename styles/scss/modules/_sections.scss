@@ -4,6 +4,21 @@ header {
   text-align: center;
 }
 
+#quote blockquote {
+  font-size: 2rem;
+  position: relative;
+
+  .hanging-quote {
+    position: absolute;
+    left: -0.7ch;
+  }
+
+  .kerned-quote {
+    position: relative;
+    left: 0.3ch;
+  }
+}
+
 #contact {
   text-align: center;
 
