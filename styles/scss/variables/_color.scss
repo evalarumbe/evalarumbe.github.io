@@ -1,6 +1,6 @@
 @use "sass:color";
 
-$sunflower: #fd2;
+$sunflower: rgb(247, 210, 6);
 $watermelon: #f45;
 $watermelon-dark: color.scale($watermelon, $lightness: -30%);
 $watermelon-light: color.scale($watermelon, $lightness: +30%);

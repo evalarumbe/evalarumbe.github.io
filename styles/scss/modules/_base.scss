@@ -2,14 +2,13 @@
 @use '../variables/size' as *;
 
 /* Raleway font */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
-  color: $body-text;
 }
 
 html {
@@ -28,22 +27,69 @@ body {
   overflow-x: hidden;
   background: $watermelon no-repeat fixed;
   background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 0.02ch;
 }
 
 section, header, footer {
-  
   display: flex;
   justify-content: center;
+  font-weight: 500;
+  color: white;
 
   &.alternate-bg {
+    color: $body-text;
     background-color: $body-text-bg;
   }
 
   .container {
     flex: 0 1 $content-col + rem;
-    padding: 4rem 4rem 6rem;
+    padding: 4rem 2rem 6rem;
+
+    // more whitespace along the sides on bigger screens
+    @media (min-width: $tablet-lower + px) {
+      padding: 4rem 4rem 6rem;
+    }
   }
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 3rem;
+}
+
+h4 {
+  margin-top: 2rem;
+
+  &+p {
+    margin-top: 0;
+  }
+}
+
+p, address {
+  margin-top: 1rem;
+}
+
+a {
+  color: $watermelon;
+  padding-bottom: 1px;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:active, &:visited {
+    color: $watermelon-dark;
+  }
+}
+
+small {
+  display: block;
 }
