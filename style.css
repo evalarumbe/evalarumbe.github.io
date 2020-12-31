@@ -56,7 +56,7 @@ h3 {
 }
 
 h4 {
-  margin-top: 2rem;
+  font-weight: 600;
 }
 h4 + p {
   margin-top: 0;
@@ -81,9 +81,51 @@ a:active, a:visited {
 small {
   display: block;
 }
+small.stack {
+  margin: 0.4rem 0;
+}
 
 header {
   text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.05ch;
+}
+header .tagline {
+  font-size: 1.6rem;
+  letter-spacing: 0.04ch;
+  margin-top: 0.5rem;
+}
+
+#quote blockquote {
+  font-size: 2rem;
+  position: relative;
+  line-height: 1.5;
+  letter-spacing: 0.05ch;
+}
+#quote blockquote .decorative-quote {
+  position: absolute;
+  top: -14rem;
+  left: -5rem;
+  opacity: 0.1;
+  font-family: "Times New Roman", serif;
+  font-size: 30rem;
+}
+
+#work h3 + .project {
+  margin-top: 1rem;
+}
+#work .project {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+#work .project .description {
+  font-weight: normal;
+}
+#work .project p {
+  font-size: 1.2rem;
 }
 
 #contact {
