@@ -116,11 +116,11 @@ header .tagline {
 }
 
 #work h3 + .project {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 #work .project {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 #work .project .description {
   font-weight: normal;
