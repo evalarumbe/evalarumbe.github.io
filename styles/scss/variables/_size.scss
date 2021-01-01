@@ -1,15 +1,24 @@
+// To maximise visual consistency, please reuse
+// existing values from this file where possible.
+// If you need a new value, add it here so it can be reused.
+
 // layout elements
+// ---------------
 
 // usage:
 // width: $content-col + rem
 $content-col: 38; // rem
 
+
 // breakpoints
+// -----------
 
 // naming convention:
 // l = landscape
 // p = portrait
-// lower = use this number with min-width (lower bound in the range of widths for this device)
+// lower = use this number with min-width
+// (e.g. if we generalize that the width of a portrait tablet is 480-767px,
+// 480 is the lower bound)
 
 // usage:
 // @media (min-width: $tablet-p-lower + px)
