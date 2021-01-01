@@ -45,11 +45,11 @@ section, header, footer {
 
   .container {
     flex: 0 1 $content-col + rem;
-    padding: 4rem 2rem 6rem;
+    padding: $size-4 + rem $size-2 + rem $size-6 + rem;
 
     // more whitespace along the sides on bigger screens
     @media (min-width: $tablet-p-lower + px) {
-      padding: 4rem 4rem 6rem;
+      padding: $size-4 + rem $size-4 + rem $size-6 + rem;
     }
   }
 }
@@ -60,7 +60,7 @@ h2, h3 {
 }
 
 h3 {
-  margin-top: 5rem;
+  margin-top: $size-5 + rem;
 }
 
 h4 {
@@ -72,7 +72,7 @@ h4 {
 }
 
 p, address {
-  margin-top: 1rem;
+  margin-top: $size-1 + rem;
 }
 
 a {
@@ -94,6 +94,6 @@ small {
   display: block;
   
   &.stack {
-    margin: 0.4rem 0;
+    margin: $size-0-4 + rem 0;
   }
 }

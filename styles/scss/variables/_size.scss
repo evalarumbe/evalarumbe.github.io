@@ -2,16 +2,25 @@
 // existing values from this file where possible.
 // If you need a new value, add it here so it can be reused.
 
-// layout elements
-// ---------------
-
 // usage:
-// width: $content-col + rem
+// flex-basis: $content-col + rem
+
+// sizing for elements and whitespace
+$size-0-4: 0.4; // rem
+$size-0-5: 0.5; // rem
+$size-1: 1; // rem
+$size-2: 2; // rem
+$size-3: 3; // rem
+$size-4: 4; // rem
+$size-5: 5; // rem
+$size-6: 6; // rem
+$size-10: 10; // rem
+
+// layout elements
 $content-col: 38; // rem
 
 
 // breakpoints
-// -----------
 
 // naming convention:
 // l = landscape

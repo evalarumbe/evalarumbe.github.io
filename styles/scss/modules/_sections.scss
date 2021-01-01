@@ -3,7 +3,7 @@
 @use '../variables/typography' as *;
 
 header {
-  padding: 10rem 0 3rem;
+  padding: $size-10 + rem 0 $size-3 + rem;
   text-align: center;
   
   h1 {
@@ -15,7 +15,7 @@ header {
   .tagline {
     font-size: $f-2 + rem;
     letter-spacing: $letter-5 + ch;
-    margin-top: 0.5rem;
+    margin-top: $size-0-5 + rem;
   }
 }
 
@@ -36,12 +36,12 @@ header {
 
 #work {
   h3+.project {
-    margin-top : 2rem;
+    margin-top : $size-2 + rem;
   }
 
   .project {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: $size-4 + rem;
 
     .description {
       font-weight: $f-regular;
@@ -100,11 +100,11 @@ footer {
 
     li {
       list-style-type: none;
-      width: 5rem;
-      height: 5rem;
+      width: $size-5 + rem;
+      height: $size-5 + rem;
 
       &:not(:last-of-type) {
-        margin-right: 1rem;
+        margin-right: $size-1 + rem;
       }
       
       a {
