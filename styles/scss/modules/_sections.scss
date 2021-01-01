@@ -47,6 +47,12 @@ header {
       font-weight: $f-regular;
     }
 
+
+    small {
+      display: block;
+      margin: $size-0-4 + rem 0;
+    }
+
     .stack {
       font-weight: $f-medium;
     }

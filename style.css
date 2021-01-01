@@ -79,13 +79,6 @@ a:active, a:visited {
   color: #e20015;
 }
 
-small {
-  display: block;
-}
-small.stack {
-  margin: 0.4rem 0;
-}
-
 header {
   padding: 10rem 0 3rem;
   text-align: center;
@@ -124,6 +117,10 @@ header .tagline {
 }
 #work .project .description {
   font-weight: 400;
+}
+#work .project small {
+  display: block;
+  margin: 0.4rem 0;
 }
 #work .project .stack {
   font-weight: 500;

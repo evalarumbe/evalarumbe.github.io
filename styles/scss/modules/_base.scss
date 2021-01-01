@@ -89,11 +89,3 @@ a {
     color: $watermelon-dark;
   }
 }
-
-small {
-  display: block;
-  
-  &.stack {
-    margin: $size-0-4 + rem 0;
-  }
-}
