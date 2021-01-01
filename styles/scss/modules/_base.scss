@@ -17,7 +17,7 @@ html {
   // Read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
   font-size: 80%;
   
-  @media (min-width: $tablet-lower + px) {
+  @media (min-width: $tablet-p-lower + px) {
     font-size: 100%;
   }
 }
@@ -48,7 +48,7 @@ section, header, footer {
     padding: 4rem 2rem 6rem;
 
     // more whitespace along the sides on bigger screens
-    @media (min-width: $tablet-lower + px) {
+    @media (min-width: $tablet-p-lower + px) {
       padding: 4rem 4rem 6rem;
     }
   }

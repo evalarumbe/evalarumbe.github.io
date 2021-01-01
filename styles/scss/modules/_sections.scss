@@ -1,4 +1,5 @@
 @use '../variables/color' as *;
+@use '../variables/size' as *;
 
 header {
   padding: 10rem 0 3rem;
@@ -28,7 +29,7 @@ header {
     top: -14rem;
     left: -5rem;
     opacity: 0.1;
-    font-family: "Times New Roman", serif;
+    font-family: 'Times New Roman', serif;
     font-size: 30rem;
   }
 }
@@ -55,6 +56,30 @@ header {
 
 #contact {
   text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.05ch;
+  font-size: 1.5rem;
+
+  // decorative @ background
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    font-family: 'Times New Roman', serif;
+    content: '\0040';
+    position: absolute;
+    opacity: 0.07;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    z-index: -1;
+    font-size: 51rem;
+    top: -32rem;
+    
+    @media (min-width: $tablet-l-lower + px) {
+      font-size: 70rem;
+      top: -43rem;
+    }
+  }
 
   a {
     color: white;

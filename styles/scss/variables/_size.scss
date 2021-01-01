@@ -6,6 +6,12 @@ $content-col: 38; // rem
 
 // breakpoints
 
+// naming convention:
+// l = landscape
+// p = portrait
+// lower = use this number with min-width (lower bound in the range of widths for this device)
+
 // usage:
-// @media (min-width: $tablet-lower + px)
-$tablet-lower: 480; // px
+// @media (min-width: $tablet-p-lower + px)
+$tablet-p-lower: 480; // px
+$tablet-l-lower: 768; // px
