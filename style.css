@@ -90,12 +90,12 @@ header {
   text-align: center;
 }
 header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.05ch;
 }
 header .tagline {
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 0.04ch;
   margin-top: 0.5rem;
 }
