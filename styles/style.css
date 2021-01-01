@@ -21,18 +21,19 @@ body {
   overflow-x: hidden;
   background: #f45 no-repeat fixed;
   background: linear-gradient(to bottom right, #f45, #f7d206) no-repeat fixed;
-  font-size: $f-1-4 + rem;
+  font-size: 1.4rem;
   line-height: 1.4;
-  letter-spacing: $letter-2 + ch;
+  letter-spacing: 0.02ch;
 }
 
 section, header, footer {
   display: flex;
   justify-content: center;
-  font-weight: 500;
   color: white;
+  font-weight: 500;
 }
 section.alternate-bg, header.alternate-bg, footer.alternate-bg {
+  font-weight: 400;
   color: #200003;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -46,7 +47,7 @@ section .container, header .container, footer .container {
   }
 }
 
-h1, h2, h3 {
+h2, h3 {
   text-align: center;
   font-weight: 600;
 }
@@ -78,41 +79,35 @@ a:active, a:visited {
   color: #e20015;
 }
 
-small {
-  display: block;
-}
-small.stack {
-  margin: 0.4rem 0;
-}
-
 header {
   padding: 10rem 0 3rem;
   text-align: center;
 }
 header h1 {
-  font-size: $f-4 + rem;
+  font-size: 4rem;
   font-weight: 400;
-  letter-spacing: $letter-5 + ch;
+  letter-spacing: 0.05ch;
 }
 header .tagline {
-  font-size: $f-2 + rem;
-  letter-spacing: $letter-4 + ch;
+  font-size: 2rem;
+  letter-spacing: 0.05ch;
   margin-top: 0.5rem;
 }
 
 #quote blockquote {
-  font-size: $f-2 + rem;
+  font-size: 2rem;
   position: relative;
-  line-height: 1.5;
-  letter-spacing: $letter-5 + ch;
+  letter-spacing: 0.05ch;
 }
 #quote blockquote .decorative-quote {
   position: absolute;
+  z-index: -1;
   top: -14rem;
   left: -5rem;
   opacity: 0.1;
   font-family: "Times New Roman", serif;
-  font-size: $f-30 + rem;
+  font-weight: 700;
+  font-size: 30rem;
 }
 
 #work h3 + .project {
@@ -123,34 +118,40 @@ header .tagline {
   margin-top: 4rem;
 }
 #work .project .description {
-  font-weight: normal;
+  font-weight: 400;
+}
+#work .project small {
+  display: block;
+  margin: 0.4rem 0;
+}
+#work .project .stack {
+  font-weight: 500;
 }
 #work .project p {
-  font-size: $f-1-2 + rem;
+  font-size: 1.2rem;
 }
 
 #contact {
   text-align: center;
   line-height: 1.5;
-  letter-spacing: $letter-5 + ch;
-  font-size: $f-1-5 + rem;
+  letter-spacing: 0.05ch;
+  font-size: 1.5rem;
   overflow: hidden;
   position: relative;
 }
 #contact::before {
-  font-family: "Times New Roman", serif;
   content: "@";
   position: absolute;
+  z-index: -1;
+  top: -32rem;
   opacity: 0.07;
   font-family: "Times New Roman", serif;
-  font-weight: bold;
-  z-index: -1;
-  font-size: $f-51 + rem;
-  top: -32rem;
+  font-weight: 700;
+  font-size: 51rem;
 }
 @media (min-width: 768px) {
   #contact::before {
-    font-size: $f-70 + rem;
+    font-size: 70rem;
     top: -43rem;
   }
 }
