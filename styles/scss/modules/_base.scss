@@ -1,14 +1,13 @@
 @use '../variables/color' as *;
 @use '../variables/size' as *;
-
-/* Raleway font */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+@use '../variables/typography' as *;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Raleway, sans-serif;
+  font-family: $f-fam-primary;
+  // font-weight: normal !important; // TODO: remove. just testing.
 }
 
 html {
@@ -27,18 +26,19 @@ body {
   overflow-x: hidden;
   background: $watermelon no-repeat fixed;
   background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  letter-spacing: 0.02ch;
+  font-size: $f-1-4 + rem;
+  line-height: $line-140;
+  letter-spacing: $letter-2 + ch;
 }
 
 section, header, footer {
   display: flex;
   justify-content: center;
-  font-weight: 500;
   color: white;
-
+  font-weight: $f-medium;
+  
   &.alternate-bg {
+    font-weight: $f-regular;
     color: $body-text;
     background-color: $body-text-bg;
   }
@@ -54,9 +54,9 @@ section, header, footer {
   }
 }
 
-h1, h2, h3 {
+h2, h3 {
   text-align: center;
-  font-weight: 600;
+  font-weight: $f-semibold;
 }
 
 h3 {
@@ -64,7 +64,7 @@ h3 {
 }
 
 h4 {
-  font-weight: 600;
+  font-weight: $f-semibold;
 
   &+p {
     margin-top: 0;

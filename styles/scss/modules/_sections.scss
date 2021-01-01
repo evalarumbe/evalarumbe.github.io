@@ -1,41 +1,40 @@
 @use '../variables/color' as *;
 @use '../variables/size' as *;
+@use '../variables/typography' as *;
 
 header {
   padding: 10rem 0 3rem;
   text-align: center;
   
   h1 {
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 0.05ch;
+    font-size: $f-4 + rem;
+    font-weight: $f-regular;
+    letter-spacing: $letter-5 + ch;
   }
-
+  
   .tagline {
-    font-size: 2rem;
-    letter-spacing: 0.04ch;
+    font-size: $f-2 + rem;
+    letter-spacing: $letter-5 + ch;
     margin-top: 0.5rem;
   }
 }
 
 #quote blockquote {
-  font-size: 2rem;
+  font-size: $f-2 + rem;
   position: relative;
-  line-height: 1.5;
-  letter-spacing: 0.05ch;
+  letter-spacing: $letter-5 + ch;
 
   .decorative-quote {
     position: absolute;
-    top: -14rem;
-    left: -5rem;
+    top: -14rem; // arbitrary manual alignment
+    left: -5rem; // arbitrary manual alignment
     opacity: 0.1;
-    font-family: 'Times New Roman', serif;
-    font-size: 30rem;
+    font-family: $f-fam-decorative;
+    font-size: $f-30 + rem;
   }
 }
 
 #work {
-
   h3+.project {
     margin-top : 2rem;
   }
@@ -45,39 +44,42 @@ header {
     margin-top: 4rem;
 
     .description {
-      font-weight: normal;
+      font-weight: $f-regular;
+    }
+
+    .stack {
+      font-weight: $f-medium;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: $f-1-2 + rem;
     }
   }
 }
 
 #contact {
   text-align: center;
-  line-height: 1.5;
-  letter-spacing: 0.05ch;
-  font-size: 1.5rem;
+  line-height: $line-150;
+  letter-spacing: $letter-5 + ch;
+  font-size: $f-1-5 + rem;
 
   // decorative @ background
   overflow: hidden;
   position: relative;
 
   &::before {
-    font-family: 'Times New Roman', serif;
-    content: '\0040';
+    content: '\0040'; // @
     position: absolute;
     opacity: 0.07;
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
+    font-family: $f-fam-decorative;
+    font-weight: $f-bold;
     z-index: -1;
-    font-size: 51rem;
-    top: -32rem;
+    font-size: $f-51 + rem;
+    top: -32rem; // arbitrary manual alignment
     
     @media (min-width: $tablet-l-lower + px) {
-      font-size: 70rem;
-      top: -43rem;
+      font-size: $f-70 + rem;
+      top: -43rem; // arbitrary manual alignment
     }
   }
 
@@ -86,12 +88,10 @@ header {
     font-style: normal;
 
     &:active {
-      font-weight: 600;
+      font-weight: $f-semibold;
     }
   }
 }
-
-// TODO: font sizes go in a separate file plz
 
 footer {
   .social-icons {

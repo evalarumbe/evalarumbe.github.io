@@ -21,9 +21,9 @@ body {
   overflow-x: hidden;
   background: #f45 no-repeat fixed;
   background: linear-gradient(to bottom right, #f45, #f7d206) no-repeat fixed;
-  font-size: 1.4rem;
+  font-size: $f-1-4 + rem;
   line-height: 1.4;
-  letter-spacing: 0.02ch;
+  letter-spacing: $letter-2 + ch;
 }
 
 section, header, footer {
@@ -90,21 +90,21 @@ header {
   text-align: center;
 }
 header h1 {
-  font-size: 4rem;
+  font-size: $f-4 + rem;
   font-weight: 400;
-  letter-spacing: 0.05ch;
+  letter-spacing: $letter-5 + ch;
 }
 header .tagline {
-  font-size: 2rem;
-  letter-spacing: 0.04ch;
+  font-size: $f-2 + rem;
+  letter-spacing: $letter-4 + ch;
   margin-top: 0.5rem;
 }
 
 #quote blockquote {
-  font-size: 2rem;
+  font-size: $f-2 + rem;
   position: relative;
   line-height: 1.5;
-  letter-spacing: 0.05ch;
+  letter-spacing: $letter-5 + ch;
 }
 #quote blockquote .decorative-quote {
   position: absolute;
@@ -112,7 +112,7 @@ header .tagline {
   left: -5rem;
   opacity: 0.1;
   font-family: "Times New Roman", serif;
-  font-size: 30rem;
+  font-size: $f-30 + rem;
 }
 
 #work h3 + .project {
@@ -126,14 +126,14 @@ header .tagline {
   font-weight: normal;
 }
 #work .project p {
-  font-size: 1.2rem;
+  font-size: $f-1-2 + rem;
 }
 
 #contact {
   text-align: center;
   line-height: 1.5;
-  letter-spacing: 0.05ch;
-  font-size: 1.5rem;
+  letter-spacing: $letter-5 + ch;
+  font-size: $f-1-5 + rem;
   overflow: hidden;
   position: relative;
 }
@@ -145,12 +145,12 @@ header .tagline {
   font-family: "Times New Roman", serif;
   font-weight: bold;
   z-index: -1;
-  font-size: 51rem;
+  font-size: $f-51 + rem;
   top: -32rem;
 }
 @media (min-width: 768px) {
   #contact::before {
-    font-size: 70rem;
+    font-size: $f-70 + rem;
     top: -43rem;
   }
 }

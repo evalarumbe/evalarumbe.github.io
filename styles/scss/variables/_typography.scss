@@ -1,0 +1,36 @@
+// To maximise visual consistency, please reuse
+// existing values from this file where possible.
+// If you need a new value, add it here so it can be reused.
+
+/* Raleway font */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+
+// font families
+$f-fam-primary: Raleway, sans-serif;
+$f-fam-decorative: 'Times New Roman', serif; // used for typographic background motifs
+
+// font size
+$f-1-2: 1.2; // rem
+$f-1-4: 1.4; // rem
+$f-1-5: 1.5; // rem
+$f-2: 2; // rem
+$f-4: 4; // rem
+$f-30: 30; // rem
+$f-51: 51; // rem
+$f-70: 70; // rem
+
+// font weight
+// TODO
+$f-regular: 400;
+$f-medium: 500;
+$f-semibold: 600;
+$f-bold: 700; // only used for decorative motifs in Times New Roman
+
+// line height
+$line-140: 1.4;
+$line-150: 1.5;
+
+// letter spacing
+$letter-2: 0.02; // ch
+$letter-4: 0.04; // ch
+$letter-5: 0.05; // ch
