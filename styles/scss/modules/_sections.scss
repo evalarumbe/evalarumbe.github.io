@@ -85,7 +85,7 @@ header {
     font-weight: $f-bold;
     font-size: $f-51 + rem;
     
-    @media (min-width: $tablet-l-lower + px) {
+    @media (min-width: ($tablet-l-lower + px)) {
       font-size: $f-70 + rem;
       top: -43rem; // arbitrary manual alignment
     }
