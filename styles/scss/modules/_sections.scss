@@ -102,6 +102,8 @@ header {
 }
 
 footer {
+  flex-direction: column;
+
   .social-icons {
     display: flex;
     justify-content: center;
@@ -138,6 +140,19 @@ footer {
           }
         }
       }
+    }
+  }
+
+  .legal {
+    margin-top: $size-3 + rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+      font-size: $size-1 + rem;
+      text-decoration: underline;
     }
   }
 }

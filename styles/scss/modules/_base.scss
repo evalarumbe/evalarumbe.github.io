@@ -22,41 +22,57 @@ html {
 }
 
 body {
-  max-width: 100vw;
+  max-width: 900vw;
   overflow-x: hidden;
   background: $watermelon no-repeat fixed;
   background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
   font-size: $f-1-4 + rem;
   line-height: $line-140;
   letter-spacing: $letter-2 + ch;
+
+  &.subpage {
+    font-size: $f-1-2 + rem;
+  }
 }
 
-section, header, footer {
+main {
+  &.container {
+    flex: 0 1 100%;
+  }
+}
+
+section, header {
   display: flex;
   justify-content: center;
-  color: white;
-  font-weight: $f-medium;
-  
-  &.alternate-bg {
-    font-weight: $f-regular;
-    color: $body-text;
-    background-color: $body-text-bg;
-  }
 
   .container {
     flex: 0 1 $content-col + rem;
-    padding: $size-4 + rem $size-2 + rem $size-6 + rem;
+  }
+}
 
-    // more whitespace along the sides on bigger screens
-    @media (min-width: $tablet-p-lower + px) {
-      padding: $size-4 + rem $size-4 + rem $size-6 + rem;
-    }
+section, header, footer {  
+  color: white;
+  font-weight: $f-medium;
+}
+
+.container {
+  padding: $size-4 + rem $size-2 + rem $size-6 + rem;
+
+  // more whitespace along the sides on bigger screens
+  @media (min-width: $tablet-p-lower + px) {
+    padding: $size-4 + rem $size-4 + rem $size-6 + rem;
   }
 }
 
 h2, h3 {
   text-align: center;
   font-weight: $f-semibold;
+}
+
+.subpage h2 {
+  text-align: left;
+  font-size: $f-1-2 + rem;
+  margin-top: $size-3 + rem;
 }
 
 h3 {
@@ -88,4 +104,14 @@ a {
   &:active, &:visited {
     color: $watermelon-dark;
   }
+}
+
+address {
+  font-style: normal;
+}
+
+.alternate-bg {
+  font-weight: $f-regular;
+  color: $body-text;
+  background-color: $body-text-bg;
 }
